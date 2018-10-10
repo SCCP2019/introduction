@@ -164,6 +164,7 @@ Then you can see the word: "Hello World" on your browser.
 
 ### Debug mode of flask
 If you have changed your code, then you have to terminate your application on the terminal, and then you re-execute the flask with "python3 app.py".
+This is so time-wasting process to debug your program especially for very big project.
 However, it doesn't need to re-start if you use "Debug mode" on your flask.
 This function is normally called as "Hot reloading".
 
@@ -183,5 +184,16 @@ if __name__ == "__main__":
     app.run()
 ```
 
-Then you can execute the app.
+Then you can execute the app with hot-reloading function.
+You can check that the message on terminal is immediatelly change after you modify the program like:
+
+
+## Point
+* Installation of Python3 to your own environment without package manage tool
+* Installation of flask framework
+
+* Hello World on flask
+* Hot-reloading function
+* Characteristics of script language
+
 
