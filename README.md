@@ -18,7 +18,7 @@ cd $HOME
 mkdir -p usr/bin/Python
 cd usr/bin/Python
 
-wget https://www.python.org/ftp/python/3.5.2/Python-3.5.2.tgz
+wget https://www.python.org/ftp/python/3.6.6/Python-3.6.6.tgz
 tar zxvf Python-3.6.6.tgz
 cd Python-3.6.6
 ./configure --without-gcc --prefix=$HOME/usr
