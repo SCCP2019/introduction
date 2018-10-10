@@ -162,4 +162,26 @@ Let's focus on the bottom of the message, here is the URL of your application.
 On filefox, type above URL, (In this time, we must access to the http://localhost:5000/ to see the application)
 Then you can see the word: "Hello World" on your browser.
 
+### Debug mode of flask
+If you have changed your code, then you have to terminate your application on the terminal, and then you re-execute the flask with "python3 app.py".
+However, it doesn't need to re-start if you use "Debug mode" on your flask.
+This function is normally called as "Hot reloading".
+
+If you want to enable debug-mode, then change your code according to below one.
+
+```py
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello, Flask!"
+
+if __name__ == "__main__":
+    debug=True
+    app.run()
+```
+
+Then you can execute the app.
 
