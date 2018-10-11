@@ -8,10 +8,10 @@ m5211143 Tomohiro Saito
 * Installation of Python3 to your local environment on Univ. of Aizu. (Solaris)
 * Create Hello World program on flask framework
 
-## Instllation of Python3
-### Instllation
-We mainly use python 3.6.6 (latest version of Python3.6.x) in this class, but Solaris and Mac OSX workstation in our university, unfortunatelly, didn't have environment for it.
-In this class, we inroduce how to install Python3 to your local environment.
+## Installation of Python3
+### Installation
+We mainly use python 3.6.6 (latest version of Python3.6.x) in this class, but Solaris and Mac OSX workstation in our university, unfortunately, didn't have environment for it.
+In this class, we introduce how to install Python3 to your local environment.
 
 Execute below script:
 
@@ -31,7 +31,7 @@ $ make clean
 ```
 
 ### Path
-The installation has successfully finished, and then you must add command to the environment path on your local environment to execute easilly.
+The installation has successfully finished, and then you must add command to the environment path on your local environment to execute easily.
 Put above appropriate installation directory according to your shell.
 
 For example, for bash:
@@ -55,7 +55,7 @@ then you can see REPL interface on your CUI window shown below.
 [ ~/Desktop/python3-tutorial ] $ python3
 Python 3.6.6 (default, Oct 10 2018, 23:10:06) [C] on sunos5
 Type "help", "copyright", "credits" or "license" for more information.
->>> 
+>>>
 ```
 
 Type:
@@ -64,7 +64,7 @@ Type:
 >>> print("Hello World.")
 ```
 
-Then you can see the results after the program line immediatelly like:
+Then you can see the results after the program line immediately like:
 
 ```py
 >>> print("Hello World.")
@@ -80,7 +80,7 @@ If you are worried about the correctness of your code, then you should check the
 At first, we need to check *pip3* command has installed successfully.
 *pip3* command is a package management tool for python3.
 We can install any package, in addition to flask, by using this command.
-(In detal, see https://ja.wikipedia.org/wiki/Pip)
+(In detail, see https://ja.wikipedia.org/wiki/Pip)
 (pip3 command was automatically installed with python3 installation, but we check this before installation of flask framework just in case.)
 
 ```sh
@@ -112,7 +112,7 @@ flask framework can be installed with below command:
 $ pip3 install flask
 ```
 
-After succesfully finished, create folder for hello world project:
+After successfully finished, create folder for hello world project:
 
 ```sh
 $ cd $HOME/
@@ -146,23 +146,18 @@ Execute:
 $ python3 app.py
 ```
 
-then you can see the message from flaks framework like:
+then you can see the message from flask framework like:
 
-```
-[ ~/hello-flask ] $ python3 app.py
- * Serving Flask app "app" (lazy loading)
- * Environment: production
-   WARNING: Do not use the development server in a production environment.
-   Use a production WSGI server instead.
- * Debug mode: off
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-```
+![](./img/start-flask.png)
 
 Let's focus on the bottom of the message, here is the URL of your application.
 On filefox, type above URL, (In this time, we must access to the http://localhost:5000/ to see the application)
 Then you can see the word: "Hello World" on your browser.
 
+![](./img/flask-hello.png)
+
 ### Debug mode of flask
+
 If you have changed your code, then you have to terminate your application on the terminal, and then you re-execute the flask with "python3 app.py".
 This is so time-wasting process to debug your program especially for very big project.
 However, it doesn't need to re-start if you use "Debug mode" on your flask.
@@ -185,8 +180,12 @@ if __name__ == "__main__":
 ```
 
 Then you can execute the app with hot-reloading function.
-You can check that the message on terminal is immediatelly change after you modify the program like:
 
+![](./img/debug-mode.png)
+
+The message on terminal is immediately change after modifying the program like:
+
+![](./img/hot-reloading.png)
 
 ## Point
 * Installation of Python3 to your own environment without package manage tool
